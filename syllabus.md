@@ -15,7 +15,7 @@ Office
   ~ SCH 111 / LYN 108
 
 Office Hours
-  ~ MWF 10:30am-11:30am, and by appointment
+  ~ MWF 10:30am-11:30am in SCH111, and by appointment
 
 Book
   ~ *Number Theory through inquiry* by Marshall, Odell and Starbird
@@ -24,7 +24,7 @@ Websites
   ~ [for notes](skiadas.github.io/AdvancedSeminarNumberTheoryCourse/)
 
 Class times
-  ~ MWF 1:20pm-2:30pm in SCH102
+  ~ MWF 1:20pm-2:30pm in CFA111
 
 ## Course Description
 
