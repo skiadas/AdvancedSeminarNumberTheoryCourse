@@ -1,0 +1,36 @@
+# Divisibility (1.1-1.6)
+
+- Introduction and syllabus
+- Introduction to CoCalc (one of your homeworks for Wednesday)
+    - Accept your invitation
+    - Look into the "Number Theory Project", find the "SampleLaTeXPage folder" and go in it.
+    - Click on the "SampleLaTeXPage.tex" file to view it. Do NOT edit it.
+    - Source code on left, resulting PDF on right. Scroll through the source code and compare with the output in order to learn how to mark certain documents.
+    - Open the project in a new window. Go into the "chapter 1" folder. Open the "SolutionsDay1.tex" file.
+    - Add a new section with your name in the title. If you find other's sections there, place yours relative to theirs according to the order of the problems you each have.
+    - State the theorem or exercise you were assigned to do, then its solution.
+- Definition: What are the **natural numbers**?
+- Definition: What are the **integers**? How can we define the integers using the natural numbers?
+- Definition: When do we say that an integer $d$ **divides** another integer $a$? How do we denote it?
+    - Provide examples.
+- Think of edge cases:
+    - Does an integer divide itself?
+    - What integers does 1 divide? What integers divide 1?
+    - What integers does 0 divide? What integers divide 0?
+- Definition: When do we say that two integers $a$, $b$ are **congruent modulo** another integer $d$?
+    - Provide examples.
+- Think of edge cases:
+    - When is an integer congruent to itself?
+    - When is an integer congruent to 0?
+    - When is an integer congruent to its negative?
+- Example theorem: If 6 divides an integer n, then 3 also divides n.
+    - Walk through the proof. Emphasis on the fact that the proof consists of sentences, not simply equations.
+    - Produce similar examples with different numbers.
+- Example theorem: If an integer k is congruent to 7 modulo 2, then k is also congruent to 3 modulo 2.
+    - Walk through the proof.
+    - Produce similar examples with different numbers.
+- Theorem 1.1: If a divides b and a divides c, then a also divides the sum of b and c.
+- Theorem 1.2: If a divides b and a divides c, then a also divides the difference of b and c.
+- Theorem 1.3: If a divides b and a divides c, then a also divides the product of b and c.
+- Question 1.4: Can we weaken the hypotheses of theorem 1.3? Can we instead strengthen the conclusion?
+- Theorem 1.5: Weakened version of theorem 1.3
