@@ -5,49 +5,49 @@ A week-by-week breakdown of the material.
 ## Week  1 (09/02-09/06)
 
 Mon
-  ~ [Divisibility (1.1-1.6)](notes/01_divisibility.md)
+  ~ [Intro, CoCalc, start on divisibility ](notes/01_divisibility.md)
 
 Wed
-  ~ Congruences (1.7-1.14)
+  ~ [Divisibility (1.1-1.6)](motes/02_more_divisibility.md)
 
 Fri
-  ~ Congruences and divisibility criteria (1.15-1.24)
+  ~ Congruences (1.7-1.14)
 
 
 ## Week  2 (09/09-09/13)
 
 Mon
-  ~ The division algorithm and common divisors (1.25-1.34)
+  ~ Congruences and divisibility criteria (1.15-1.24)
 
 Wed
-  ~ Euclidean algorithm and relatively prime numbers (1.35-1.45)
+  ~ The division algorithm and common divisors (1.25-1.34)
 
 Fri
-  ~ Diophantine equations (1.46-1.58)
+  ~ Euclidean algorithm and relatively prime numbers (1.35-1.45)
 
 
 ## Week  3 (09/16-09/20)
 
 Mon
-  ~ Prime numbers and the fundamental theorem of arithmetic (2.1-2.11)
+  ~ Diophantine equations (1.46-1.58)
 
 Wed
-  ~ Applications of the fundamental theorem (2.12-2.24)
+  ~ Prime numbers and the fundamental theorem of arithmetic (2.1-2.11)
 
 Fri
-  ~ More prime divisibility and gcd properties (2.25-2.31)
+  ~ Applications of the fundamental theorem (2.12-2.24)
 
 
 ## Week  4 (09/23-09/27)
 
 Mon
-  ~ Infinitude of primes (2.32-2.39)
+  ~ More prime divisibility and gcd properties (2.25-2.31)
 
 Wed
-  ~ Other facts about primes (2.41-2.44, 2.48)
+  ~ Infinitude of primes (2.32-2.39)
 
 Fri
-  ~ TBD
+  ~ Other facts about primes (2.41-2.44, 2.48)
 
 
 ## Week  5 (09/30-10/04)
