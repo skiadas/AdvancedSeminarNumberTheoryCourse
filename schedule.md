@@ -11,19 +11,19 @@ Wed
   ~ More practice writing proofs
 
 Fri
-  ~ [Divisibility (1.1-1.6)](motes/02_more_divisibility.md)
+  ~ [Divisibility (1.1-1.6)](notes/02_more_divisibility.md)
 
 
 ## Week  2 (09/09-09/13)
 
 Mon
-  ~ Congruences (1.7-1.14)
+  ~ [Congruences (1.7-1.14)](notes/03_congruences.md)
 
 Wed
-  ~ Congruences and divisibility criteria (1.15-1.24)
+  ~ [Congruences and divisibility criteria (1.15-1.24)](notes/04_congruences_and_divisibility.md)
 
 Fri
-  ~ The division algorithm and common divisors (1.25-1.34)
+  ~ [The division algorithm and common divisors (1.25-1.34)](notes/05_division_algorithm.md)
 
 
 ## Week  3 (09/16-09/20)

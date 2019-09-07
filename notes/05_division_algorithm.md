@@ -1,0 +1,23 @@
+# Division Algorithm and common divisors (1.25-1.34)
+
+- Well-Ordering Axiom statement.
+    - This is not true for the integers, think of examples. Then restate it a bit to make it true for the integers.
+    - This is not true for the real numbers, think of examples.
+- Example Theorem. Make sure you understand how it works. What is the significance of 7?
+- Theorem: The division algorithm. Make sure you clearly understand the statement.
+- Example 1.25. Construct other similar examples.
+- Theorem 1.26. The example theorem should help you.
+- Theorem 1.27.
+- Theorem 1.28. What does this theorem tell us about the equivalence classes of congruence?
+- Definition: common divisor.
+- Question 1.29.
+- Question 1.30.
+- Definition: greatest common divisor.
+    - Provide Examples.
+- Definition: relatively prime numbers.
+- Exercise 1.31.
+- Theorem 1.32.
+    - Provide Examples.
+    - Can you think of any kind of converse?
+- Theorem 1.33. Use the previous theorem.
+- Theorem 1.34.
