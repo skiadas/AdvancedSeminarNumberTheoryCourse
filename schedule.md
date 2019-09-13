@@ -25,6 +25,7 @@ Wed
 Fri
   ~ [Congruences and divisibility criteria continued (1.15-1.24)](notes/04_congruences_and_divisibility.md)
 
+    First programming assignment, due Wednesday. Look in `code/assignment1/sampleStartCode.sagews`.
 
 ## Week  3 (09/16-09/20)
 
