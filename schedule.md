@@ -23,40 +23,40 @@ Wed
   ~ [Congruences and divisibility criteria (1.15-1.24)](notes/04_congruences_and_divisibility.md)
 
 Fri
-  ~ [The division algorithm and common divisors (1.25-1.34)](notes/05_division_algorithm.md)
+  ~ [Congruences and divisibility criteria continued (1.15-1.24)](notes/04_congruences_and_divisibility.md)
 
 
 ## Week  3 (09/16-09/20)
 
 Mon
-  ~ Euclidean algorithm and relatively prime numbers (1.35-1.45)
+  ~ [The division algorithm and common divisors (1.25-1.34)](notes/05_division_algorithm.md)
 
 Wed
-  ~ Diophantine equations (1.46-1.58)
+  ~ Euclidean algorithm and relatively prime numbers (1.35-1.45)
 
 Fri
-  ~ Prime numbers and the fundamental theorem of arithmetic (2.1-2.11)
+  ~ Diophantine equations (1.46-1.58)
 
 
 ## Week  4 (09/23-09/27)
 
 Mon
-  ~ Applications of the fundamental theorem (2.12-2.24)
+  ~ Prime numbers and the fundamental theorem of arithmetic (2.1-2.11)
 
 Wed
-  ~ More prime divisibility and gcd properties (2.25-2.31)
+  ~ Applications of the fundamental theorem (2.12-2.24)
 
 Fri
-  ~ Infinitude of primes (2.32-2.39)
+  ~ More prime divisibility and gcd properties (2.25-2.31)
 
 
 ## Week  5 (09/30-10/04)
 
 Mon
-  ~ Other facts about primes (2.41-2.44, 2.48)
+  ~ Infinitude of primes (2.32-2.39)
 
 Wed
-  ~ TBD
+  ~ Other facts about primes (2.41-2.44, 2.48)
 
 Fri
   ~ Exam 1  (Chapters 1, 2)
