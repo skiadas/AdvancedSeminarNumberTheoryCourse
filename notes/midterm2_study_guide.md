@@ -1,4 +1,4 @@
-# Midterm 1 Study Guide
+# Midterm 2 Study Guide
 
 1. Provide definitions for the terms and statements for the theorems:
     a. A number being prime

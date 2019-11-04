@@ -116,7 +116,7 @@ Wed
   ~ TBD
 
 Fri
-  ~ Exam 2
+  ~ [Exam 2](notes/midterm2_study_guide.md) (Chapter 2)
 
 
 ## Week 11 (11/11-11/15)
