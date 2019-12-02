@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-dark.css" rel="stylesheet" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>chapter7</title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="chapter-7-notes">Chapter 7 notes</h1>
+<h2 id="quadratic-reciprocity">Quadratic Reciprocity</h2>
+<ul>
+<li>We focus exclusively on odd primes <span class="math inline">\(p\)</span>.</li>
+<li>General fact: A degree <span class="math inline">\(n\)</span> equation can have at most <span class="math inline">\(n\)</span> solutions modulo <span class="math inline">\(p\)</span>.</li>
+<li>The number <span class="math inline">\(a\)</span> is a <em>quadratic residue</em> modulo <span class="math inline">\(p\)</span> iff it is the square of a number modulo <span class="math inline">\(p\)</span>, i.e there is a solution to the equation <span class="math inline">\(x^2=a \mod p\)</span>.
+<ul>
+<li>If <span class="math inline">\(x\)</span> is a solution then <span class="math inline">\(-x\)</span> also is a solution. And since <span class="math inline">\(p\)</span> is odd, <span class="math inline">\(x\)</span> and <span class="math inline">\(-x\)</span> are NOT congruent modulo <span class="math inline">\(p\)</span>, unless <span class="math inline">\(x=0 \mod p\)</span>.</li>
+<li>The equation <span class="math inline">\(x^2=a \mod p\)</span> can have at most 2 solutions. It has exactly two solutions unless <span class="math inline">\(a=0\)</span>.</li>
+<li>The squares of the numbers modulo <span class="math inline">\(p\)</span> produce exactly <span class="math inline">\(1 + \frac{p-1}{2}\)</span> possible numbers.</li>
+</ul></li>
+<li>The numbers modulo <span class="math inline">\(p\)</span> are therefore classified in three groups (7.6):
+<ul>
+<li>zero</li>
+<li>non-zero quadratic residues (<span class="math inline">\(\frac{p-1}{2}\)</span> of them)</li>
+<li>non-zero quadratic non-residues (the remaining <span class="math inline">\(\frac{p-1}{2}\)</span> of them)</li>
+</ul></li>
+<li>Check modulo 13: There are 6 quadratic residues: <span class="math inline">\(1,2,4,9,3,12\)</span></li>
+<li>Multiplicative relation (7.7):
+<ul>
+<li>Residue times Residue is a Residue</li>
+<li>Residue times Non-residue is a Non-residue</li>
+<li>Non-residue times Non-residue is a Residue</li>
+<li>Proof:
+<ul>
+<li>Residue times Residue is obvious <span class="math inline">\(x^2y^2=(xy)^2\)</span></li>
+<li>Multiplying the numbers by a specific non-zero Residue is 1-1 function, so it must take the Non-residues to the Non-residues.</li>
+<li>Now consider multiplying by a Non-residue: It is 1-1, and take the Residues onto all the Non-residues. Therefore it must take the Non-residues onto the Residues.</li>
+</ul></li>
+</ul></li>
+<li>Legendre Symbol (7.8)</li>
+<li>Euler’s criterion (7.9): <span class="math inline">\(a^{(p-1)/2}=1\mod p\)</span> for quadratic residues, and equals <span class="math inline">\(-1\mod p\)</span> for non-residues (for <span class="math inline">\(a\neq 0\mod p\)</span>).
+<ul>
+<li>Proof:
+<ul>
+<li>First off, note that <span class="math inline">\(a^{(p-1)/2}\)</span> squared must equal <span class="math inline">\(a^{p-1}=1\mod p\)</span>. Therefore <span class="math inline">\(a^{(p-1)/2}\)</span> must be <span class="math inline">\(\pm 1\mod p\)</span>.</li>
+<li>The equations <span class="math inline">\(x^{(p-1)/2}=1\mod p\)</span> and <span class="math inline">\(x^{(p-1)/2}=1\mod p\)</span> have at most <span class="math inline">\((p-1)/2\)</span> solutions each, and together must account for all <span class="math inline">\(p-1\)</span> non-zero numbers modulo <span class="math inline">\(p\)</span>, therefore they each must have <em>exactly</em> <span class="math inline">\((p-1)/2\)</span> solutions.</li>
+<li>If <span class="math inline">\(a=x^2 \mod p\)</span> is a quadratic residue, the <span class="math inline">\(a^{(p-1)/2}=x^{p-1}=1\mod p\)</span>, therefore the quadratic residues are <em>exactly</em> those solving the “equals to 1” equation.</li>
+<li>Therefore the non-residues must be solving the “equals to -1” equation.</li>
+</ul></li>
+</ul></li>
+<li>Application (7.10): Use for <span class="math inline">\(a=-1\)</span>. Then if <span class="math inline">\(p=1\mod 4\)</span> then <span class="math inline">\((p-1)/2\)</span> is even and <span class="math inline">\(a^{(p-1)/2} = 1\mod p\)</span>, so <span class="math inline">\(-1\)</span> is a quadratic residue. If <span class="math inline">\(p=3\mod 4\)</span> then <span class="math inline">\((p-1)/2\)</span> is odd and therefore <span class="math inline">\(-1\)</span> is a quadratic non-residue.</li>
+<li>Gauss’ lemma (7.13 and 7.14)
+<ul>
+<li>We start by choosing different representatives for the equivalence classes, using the numbers from <span class="math inline">\(-\frac{p-1}{2}\)</span> up to <span class="math inline">\(\frac{p-1}{2}\)</span>.</li>
+<li>For <span class="math inline">\(p=13\)</span> this would be <span class="math inline">\(-6,-5,-4,\ldots,5,6\)</span>.</li>
+<li>For a number <span class="math inline">\(a\)</span> multiply the postive representatives (<span class="math inline">\(1,2,\ldots,\frac{p-1}{2}\)</span> by <span class="math inline">\(a\)</span>: This function is 1-1. Denote by <span class="math inline">\(g\)</span> the number of negative representatives.
+<ul>
+<li>Example <span class="math inline">\(p=13\)</span> and <span class="math inline">\(a=3\)</span>. Products are <span class="math inline">\(3,6,9=-4,12=-1,15=2,18=5\)</span>. So <span class="math inline">\(g=2\)</span>.</li>
+<li>Example <span class="math inline">\(p=13\)</span> and <span class="math inline">\(a=5\)</span>. Products are <span class="math inline">\(5,10=-3,15=2,20=-6,25=-1,30=4\)</span>. So <span class="math inline">\(g=3\)</span>.</li>
+</ul></li>
+<li>This function also never produces a number and its negative: If <span class="math inline">\(ax=-ay\mod p\)</span> then <span class="math inline">\(x=-y\mod p\)</span> but we started with only the positive representatives.</li>
+<li>So the numbers obtained as <span class="math inline">\(a\cdot 1, a\cdot 2, \ldots, a\cdot(\frac{p-1}{2})\)</span> are up to their order the same as <span class="math inline">\(1,2,\ldots,\frac{p-1}{2}\)</span> with exactly <span class="math inline">\(g\)</span> of them having negative signs instead.</li>
+<li>Multiply together to obtain <span class="math inline">\(a^{(p-1)/2}\left(\frac{p-1}{2}\right)! = (-1)^g\left(\frac{p-1}{2}\right)! \mod p\)</span> or else <span class="math inline">\(a^{(p-1)/2}=(-1)^g \mod p\)</span>.</li>
+<li>Gauss’ lemma: The Legendre symbol of <span class="math inline">\(a\)</span> modulo <span class="math inline">\(p\)</span> equals <span class="math inline">\((-1)^g\)</span>. Therefore <span class="math inline">\(a\)</span> is a quadratic residue iff <span class="math inline">\(g\)</span> is even.</li>
+<li>Check with example from earlier.</li>
+</ul></li>
+<li>Application (7.16):
+<ul>
+<li>Special case of <span class="math inline">\(a=2\)</span>:</li>
+<li>Multiplying by <span class="math inline">\(2\)</span> produces the numbers <span class="math inline">\(2, 4, \ldots p-1\)</span>. We have to simply count how many of those are greater than <span class="math inline">\(\frac{p-1}{2}\)</span>.
+<ul>
+<li>If <span class="math inline">\(\frac{p-1}{2}\)</span> is even, then it’s exactly half of them, or <span class="math inline">\(\frac{p-1}{4}\)</span>. This happens when <span class="math inline">\(p=1\mod 8\)</span> or <span class="math inline">\(p=5\mod 8\)</span>, in which cases <span class="math inline">\(\frac{p-1}{4}\)</span> is even and odd respectively.</li>
+<li>If <span class="math inline">\(\frac{p-1}{2}\)</span> is odd, it’s <span class="math inline">\(\frac{p+1}{4}\)</span> of them. This happens when <span class="math inline">\(p=3\mod 8\)</span> or <span class="math inline">\(p=7\mod 8\)</span>, in which cases <span class="math inline">\(\frac{p+1}{4}\)</span> is odd and even respectively.</li>
+</ul></li>
+<li>So <span class="math inline">\(g\)</span> is odd if <span class="math inline">\(p=3\mod 8\)</span> or <span class="math inline">\(p=5\mod 8\)</span> and <span class="math inline">\(g\)</span> is even if <span class="math inline">\(p=1\mod 8\)</span> or <span class="math inline">\(p=7\mod 8\)</span>.</li>
+</ul></li>
+<li>Quadratic Reciprocity for <span class="math inline">\(p,q\)</span> (7.19).
+<ul>
+<li>Proof (not in the book, see Eisenstein’s proof <a href="https://en.wikipedia.org/wiki/Proofs_of_quadratic_reciprocity#Eisenstein&#39;s_proof">here</a>):</li>
+<li>Sketch of proof:
+<ul>
+<li>Statement 7.19 is equivalent to: <span class="math inline">\(\binom{p}{q}\binom{q}{p} = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}\)</span></li>
+<li>We will define something we will denote by <span class="math inline">\(T(q, p)\)</span>, with the property that <span class="math inline">\(\binom{q}{p} = (-1)^{T(q,p)}\)</span>.</li>
+<li>We will also show that <span class="math inline">\(T(q,p) + T(p, q) = \frac{p-1}{2}\frac{q-1}{2}\)</span>.</li>
+<li>These two properties of $T help us prove the equivalent statement.</li>
+</ul></li>
+<li>Statement 7.19 is equivalent to: <span class="math inline">\(\binom{p}{q}\binom{q}{p} = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}\)</span></li>
+<li>Now we establish a certain way to compute <span class="math inline">\(\binom{p}{q}\)</span>.
+<ul>
+<li>For <span class="math inline">\(a\)</span> odd we consider the products <span class="math inline">\(a\cdot 1, a\cdot 2,\ldots, a\cdot \frac{p-1}{2}\)</span>. From Gauss’ lemma we consider <span class="math inline">\(r_1,r_2,\ldots, r_{\frac{p-1}{2}}\)</span> their representatives in the set <span class="math inline">\(-\frac{p-1}{2},-1,\ldots,1,\frac{p-1}{2}\)</span>. It will be exactly half of them. Denote by <span class="math inline">\(g\)</span> the number of those that are negative. We already know <span class="math inline">\(\binom{a}{p}=(-1)^g\)</span>.</li>
+<li>We consider the same products, and divide them each by <span class="math inline">\(p\)</span>. So we have division formulas <span class="math inline">\(a\cdot k = d_k p + s_k\)</span>, where <span class="math inline">\(s_k\)</span> is the usual remainder in range <span class="math inline">\(0\)</span> to <span class="math inline">\(p-1\)</span>.
+<ul>
+<li>These remainders <span class="math inline">\(s_k\)</span> are either equal to <span class="math inline">\(r_k\)</span> or <span class="math inline">\(p-r_k\)</span> depending on whether <span class="math inline">\(r_k\)</span> was positive or negative. Exactly <span class="math inline">\(g\)</span> of them will equal <span class="math inline">\(p-r_k\)</span>.</li>
+</ul></li>
+<li>Now we consider the sum of all the <span class="math inline">\(a\cdot k\)</span> (there are <span class="math inline">\(\frac{p-1}{2}\)</span> of them). By the divisions this is equal to the sum of <span class="math inline">\(d_k p\)</span> plus the sum of <span class="math inline">\(s_k\)</span>.</li>
+<li>We now separately compute the two sides modulo <span class="math inline">\(2\)</span>. The sum of the <span class="math inline">\(a\cdot k\)</span> for <span class="math inline">\(k=1,\ldots,\frac{p-1}{2}\)</span> is going to equal <span class="math inline">\(a\)</span> times the sum of the <span class="math inline">\(k\)</span>s. Since <span class="math inline">\(a\)</span> is odd, it is equal to <span class="math inline">\(1\)</span> modulo <span class="math inline">\(2\)</span>, so this sum will equal just the sum of the <span class="math inline">\(k\)</span>s.</li>
+<li>The other side has the sum of the <span class="math inline">\(d_k p\)</span> terms and the sum of the <span class="math inline">\(s_k\)</span> terms. Since <span class="math inline">\(p\)</span> is an odd prime, it is the same as <span class="math inline">\(1\)</span> modulo <span class="math inline">\(2\)</span> so the first sum is just the sum of the <span class="math inline">\(d_k\)</span> terms, modulo <span class="math inline">\(2\)</span>.</li>
+<li>The sum of the <span class="math inline">\(s_k\)</span> terms is related to the sum of the <span class="math inline">\(r_k\)</span> terms.
+<ul>
+<li>Remember that eack <span class="math inline">\(s_k\)</span> was either equal to <span class="math inline">\(r_k\)</span> or to <span class="math inline">\(p-r_k\)</span>, and exactly <span class="math inline">\(g\)</span> terms had the second property.</li>
+<li>Note that modulo <span class="math inline">\(2\)</span> the expression <span class="math inline">\(p-r_k\)</span> is the same as <span class="math inline">\(1+r_k\)</span>.</li>
+<li>Therefore the sum of the <span class="math inline">\(s_k\)</span> equals the sum of the <span class="math inline">\(r_k\)</span> plus <span class="math inline">\(g\)</span>.</li>
+<li>Further note that the <span class="math inline">\(r_k\)</span> are just the <span class="math inline">\(k\)</span>s but just in different order and some of them negated. But when we consider the sum modulo <span class="math inline">\(2\)</span>, none of these two factors matter. so the sum of the <span class="math inline">\(r_k\)</span> is equal to the sum of the <span class="math inline">\(k\)</span>, modulo <span class="math inline">\(2\)</span>.</li>
+</ul></li>
+<li>So to sum up, the left side is equal to the sum of the <span class="math inline">\(k\)</span>s while the right side has the sum of the <span class="math inline">\(d_k\)</span> plus the sum of the <span class="math inline">\(k\)</span> plus <span class="math inline">\(g\)</span>, and these sides are equal modulo <span class="math inline">\(2\)</span>.</li>
+<li>We can cancel out the sum of the <span class="math inline">\(k\)</span>, which is common to both sides, then move one of the remaining terms to the other side, and we end up with <span class="math inline">\(g\)</span> equaling the sum of the <span class="math inline">\(d_k\)</span>s, modulo <span class="math inline">\(2\)</span>.</li>
+<li>The end result of all this is that <span class="math inline">\((-1)^g\)</span> is equal to <span class="math inline">\(-1\)</span> raised to the sum of the <span class="math inline">\(d_k\)</span>s. We will denote this sum by <span class="math inline">\(T(a, p)\)</span>.</li>
+<li>We therefore have <span class="math inline">\(\binom(q, p) = (-1)^{T(q,p)}\)</span>.</li>
+</ul></li>
+<li>Now we can rewrite our <span class="math inline">\(\binom{p}{q}\binom{q}{p} = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}\)</span> statement, which we are still trying to prove, as:
+<ul>
+<li><span class="math inline">\((-1)^{T(q, p)}(-1)^{T(p, q)} = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}\)</span></li>
+</ul></li>
+<li>We will now use a geometric argument to show that <span class="math inline">\(T(q, p) + T(p, q) = \frac{p-1}{2}\cdot\frac{q-1}{2}\)</span>.
+<ul>
+<li>In the <span class="math inline">\(x-y\)</span>-plane consider the points with integer coordinates <span class="math inline">\((x,y)\)</span> where <span class="math inline">\(x=1,2,\ldots,\frac{p-1}{2}\)</span> and <span class="math inline">\(y=1,2,\ldots,\frac{q-1}{2}\)</span>.</li>
+<li>Consider the line <span class="math inline">\(y=\frac{q}{p} x\)</span> on this plane. It divides the points in two parts (it has to miss all the points because <span class="math inline">\(q\)</span> and <span class="math inline">\(p\)</span> are relatively prime).</li>
+<li>If we consider a particular <span class="math inline">\(k\)</span>, there are exactly <span class="math inline">\(d_k\)</span> integer points lying directly below the point <span class="math inline">\(y=\frac{q}{p}k\)</span>.</li>
+<li>So the points below the line add up to <span class="math inline">\(T(q, p)\)</span>.</li>
+<li>Symmetrically, looking at things with the axes reversed and the equation <span class="math inline">\(x=\frac{p}{q}y\)</span>, we see that the points above the line in the original picture add up to <span class="math inline">\(T(p, q)\)</span>.</li>
+<li>Therefore <span class="math inline">\(T(q, p) + T(p, q)\)</span> equals the total number of integers points, which is <span class="math inline">\(\frac{p-1}{2}\cdot\frac{q-1}{2}\)</span>.</li>
+</ul></li>
+</ul></li>
+</ul>
+<script type="text/javascript">
+let els = document.getElementsByTagName("pre");
+for (const el of els) {
+  const lang = el.getAttribute("class");
+  if (lang != "") {
+      el.children[0].setAttribute("class", "language-"+lang);
+  }
+}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.js"></script>
+</body>
+</html>

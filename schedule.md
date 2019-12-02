@@ -158,11 +158,5 @@ Fri
 ## Week 14 (12/02-12/06)
 
 Mon
-  ~ TBD
-
-Wed
-  ~ TBD
-
-Fri
-  ~ TBD
+  ~ [Chapter 7 notes](notes/chapter7.md)
 
