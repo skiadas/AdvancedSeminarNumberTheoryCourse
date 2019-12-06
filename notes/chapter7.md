@@ -69,7 +69,7 @@
         - So to sum up, the left side is equal to the sum of the $k$s while the right side has the sum of the $d_k$ plus the sum of the $k$ plus $g$, and these sides are equal modulo $2$.
         - We can cancel out the sum of the $k$, which is common to both sides, then move one of the remaining terms to the other side, and we end up with $g$ equaling the sum of the $d_k$s, modulo $2$.
         - The end result of all this is that $(-1)^g$ is equal to $-1$ raised to the sum of the $d_k$s. We will denote this sum by $T(a, p)$.
-        - We therefore have $\binom(q, p) = (-1)^{T(q,p)}$.
+        - We therefore have $\binom{q}{p} = (-1)^{T(q,p)}$.
     - Now we can rewrite our $\binom{p}{q}\binom{q}{p} = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}$ statement, which we are still trying to prove, as:
         - $(-1)^{T(q, p)}(-1)^{T(p, q)} = (-1)^{\frac{p-1}{2}\cdot\frac{q-1}{2}}$
     - We will now use a geometric argument to show that $T(q, p) + T(p, q) = \frac{p-1}{2}\cdot\frac{q-1}{2}$.
