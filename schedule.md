@@ -160,3 +160,5 @@ Fri
 Mon
   ~ [Chapter 7 notes](notes/chapter7.md)
 
+Fri
+  ~ [Midterm 3 study guide](notes/midterm3_study_guide.md)
